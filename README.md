@@ -76,7 +76,8 @@ GET /users/{username}
 GET /users/{username}/repos
 Output Screenshot :
 <img width="925" height="340" alt="image" src="https://github.com/user-attachments/assets/8b234109-a2ff-4651-af80-0d395bace931" />
-<img width="741" height="725" alt="image" src="https://github.com/user-attachments/assets/fb34085e-f199-436d-bae1-4ab45631738c" />
+<img width="642" height="651" alt="image" src="https://github.com/user-attachments/assets/5d6fba7c-4015-4fee-a404-081eebb9d54b" />
+
 
 
 License
