@@ -399,11 +399,9 @@ For questions, feedback, or support:
 
 Open an Issue
 
-Email: virendra@example.com
+Email: virendra7070@gmail.com
 
 🎉 Final Note
 "Built with ❤️ by Virendra © 2026"
 
 Thank you for checking out GitHub Profile Finder! If you love it, don't forget to give it a ⭐!
-
-⬆ Back to Top
