@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5">
+    <title>GitHub Profile Finder</title>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-card" id="app">
+        <!-- Header -->
+        <div class="header">
+            <h1><i class="fab fa-github" style="margin-right: 8px;"></i>Profile Finder</h1>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i> <span id="themeLabel">Dark</span>
+            </button>
+        </div>
+
+        <!-- Search -->
+        <div class="search-wrapper">
+            <input type="text" class="search-input" id="searchInput" placeholder="Enter GitHub username..." autofocus>
+            <button class="search-btn" id="searchBtn">
+                <i class="fas fa-search"></i> <span>Search</span>
+            </button>
+        </div>
+
+        <!-- History -->
+        <div class="history-area" id="historyArea"></div>
+
+        <!-- Profile Card -->
+        <div class="profile-card" id="profileCard">
+            <div class="profile-top">
+                <a class="avatar-link" id="avatarLink" href="#" target="_blank" rel="noopener noreferrer">
+                    <img class="avatar" id="avatar" src="#" alt="avatar">
+                </a>
+                <div class="profile-info">
+                    <div style="display:flex; align-items:center; gap:0.8rem; flex-wrap:wrap;">
+                        <a class="profile-name-link" id="profileNameLink" href="#" target="_blank" rel="noopener noreferrer">
+                            <h2 id="name">username</h2>
+                        </a>
+                        <span class="login" id="login">@handle</span>
+                        <button class="favorite-btn" id="favoriteBtn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="bio" id="bio">Bio here</div>
+                    <div class="extra-badges" id="extraBadges">
+                        <span><i class="fas fa-building"></i> <span id="company">—</span></span>
+                        <span><i class="fas fa-map-pin"></i> <span id="location">—</span></span>
+                        <span><i class="fas fa-globe"></i> <span id="website">—</span></span>
+                        <span><i class="fab fa-twitter"></i> <span id="twitter">—</span></span>
+                        <span><i class="fas fa-calendar-alt"></i> <span id="joined">—</span></span>
+                        <span class="hireable-badge" id="hireableBadge">
+                            <i class="fas fa-briefcase"></i>
+                            <span id="hireableText">Checking...</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-grid" id="statsGrid">
+                <div class="stat-item">
+                    <div class="stat-number" id="repoCount">0</div>
+                    <div class="stat-label">Repos</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="followerCount">0</div>
+                    <div class="stat-label">Followers</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="followingCount">0</div>
+                    <div class="stat-label">Following</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="gistCount">0</div>
+                    <div class="stat-label">Gists</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" id="accountAge">0</div>
+                    <div class="stat-label">Days old</div>
+                </div>
+            </div>
+
+            <!-- Repositories -->
+            <div class="repo-section">
+                <div class="repo-header">
+                    <h3><i class="fas fa-code"></i> Top Repositories</h3>
+                    <span style="font-size:0.75rem; color:#64748b;">⭐ sorted by stars</span>
+                </div>
+                <div class="repo-list" id="repoList"></div>
+            </div>
+
+            <!-- Chart -->
+            <div class="chart-container">
+                <div class="chart-wrapper">
+                    <canvas id="langChart" width="200" height="200"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Error -->
+        <div id="errorArea"></div>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Made with <i class="fas fa-heart" style="color: #ef4444;"></i> by <strong>Virendra</strong> &copy; 2026</p>
+            <p style="font-size: 0.6rem; opacity: 0.5; margin-top: 0.2rem;">
+                <i class="fas fa-code"></i> GitHub Profile Finder
+            </p>
+        </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="storage.js"></script>
+    <script src="theme.js"></script>
+    <script src="api.js"></script>
+    <script src="charts.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
