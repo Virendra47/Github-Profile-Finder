@@ -1,13 +1,5 @@
 🔍 GitHub Profile Finder
 A beautiful, feature-rich GitHub profile search application built with vanilla JavaScript. Search any GitHub username and get detailed profile information with a stunning glassmorphism UI.
-
-📸 Screenshots
-🌞 Light Mode
-https://github.com/user-attachments/assets/8b234109-a2ff-4651-af80-0d395bace931
-
-🌙 Dark Mode
-https://github.com/user-attachments/assets/b5ee354a-24f6-4e92-9d2a-5b668b438625
-
 ✨ Features
 🔍 Smart Search
 Search by GitHub username with instant results
@@ -397,6 +389,9 @@ If you find this project useful, please:
 🔧 Contribute to the codebase
 
 📢 Share with others
+📸 Screenshots
+<img width="957" height="368" alt="image" src="https://github.com/user-attachments/assets/71e7e5d5-11d2-4d5d-a988-2a0dd6d43b95" />
+<img width="871" height="857" alt="image" src="https://github.com/user-attachments/assets/ebc200b7-9485-4047-926f-f649037c76f7" />
 
 
 📧 Contact
